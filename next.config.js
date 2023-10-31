@@ -6,20 +6,20 @@ const nextConfig = (phase) => {
   switch (phase) {
     case PHASE_DEVELOPMENT_SERVER:
       env = {
-        MONGODB_USER: "admin",
-        MONGODB_PASSWORD: "admin",
-        MONGODB_CLUSTER: "NextJS",
-        MONGODB_DATABASE: "test-site",
-        MONGODB_COLLECTION: "contact-messages"
+        MONGODB_USER: "",
+        MONGODB_PASSWORD: "",
+        MONGODB_CLUSTER: "",
+        MONGODB_DATABASE: "",
+        MONGODB_COLLECTION: ""
       };
       break;
     case PHASE_PRODUCTION_BUILD:
       env = {
-        MONGODB_USER: "admin",
-        MONGODB_PASSWORD: "admin",
-        MONGODB_CLUSTER: "NextJS",
-        MONGODB_DATABASE: "built-site",
-        MONGODB_COLLECTION: "contact-messages"
+        MONGODB_USER: "",
+        MONGODB_PASSWORD: "",
+        MONGODB_CLUSTER: "",
+        MONGODB_DATABASE: "",
+        MONGODB_COLLECTION: ""
       };
       break;
   
@@ -36,7 +36,7 @@ const nextConfig = (phase) => {
 
   return {
     reactStrictMode: true,
-    env: env
+    //env: env
   };
 }
 
